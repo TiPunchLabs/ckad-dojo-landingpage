@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Python
+.venv/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Dev / audit artifacts
+/*.png
+.playwright-mcp/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+.envrc
+
+# claude
+.claude/
+
+# Terraform (state may contain secrets — hosting IaC lives outside this repo)
+**/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+github-terraform/
+gitlab-terraform/
