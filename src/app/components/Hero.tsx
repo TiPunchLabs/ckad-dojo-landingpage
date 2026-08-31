@@ -38,16 +38,16 @@ export function Hero() {
           <p className="w-full min-w-0 max-w-[52ch] text-[19px] leading-[1.6] text-ink/70">
             {t.hero.lede}
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex gap-2.5 sm:gap-3">
             <a
               href={GITHUB_REPO}
-              className="rounded-full bg-accent px-7 py-4 font-bold text-ground transition-colors hover:bg-ink"
+              className="whitespace-nowrap rounded-lg bg-accent px-5 py-4 font-bold text-ground transition-colors hover:bg-ink sm:px-7"
             >
               {t.hero.ctaStart}
             </a>
             <a
               href={QUICKSTART_URL}
-              className="rounded-full border-2 border-ink/15 px-7 py-4 font-semibold text-ink transition-colors hover:border-ink"
+              className="whitespace-nowrap rounded-lg border-2 border-ink/15 px-5 py-4 font-semibold text-ink transition-colors hover:border-ink sm:px-7"
             >
               {t.hero.ctaQuickstart}
             </a>
@@ -63,7 +63,7 @@ export function Hero() {
                     setCopied(false);
                   }}
                   aria-pressed={tab.id === tb.id}
-                  className={`tap-target cursor-pointer rounded-full px-4 py-2 text-[13px] font-semibold transition-colors ${
+                  className={`tap-target cursor-pointer rounded-md px-4 py-2 text-[13px] font-semibold transition-colors ${
                     tab.id === tb.id ? 'bg-ink text-ground' : 'bg-ink/5 text-ink/65 hover:bg-ink/10'
                   }`}
                 >
@@ -71,18 +71,18 @@ export function Hero() {
                 </button>
               ))}
             </div>
-            <div className="flex items-center gap-3.5 rounded-[18px] bg-ink px-5 py-[15px] text-ground">
+            <div className="flex min-w-0 items-center gap-3.5 rounded-lg bg-ink px-5 py-[15px] text-ground">
               <span aria-hidden="true" className="font-mono text-amber">
                 ❯
               </span>
-              <code className="flex-1 overflow-x-auto whitespace-nowrap text-[13.5px]">
+              <code className="min-w-0 flex-1 overflow-x-auto whitespace-nowrap text-[13.5px]">
                 {tab.cmd}
               </code>
               <button
                 type="button"
                 onClick={copy}
                 aria-live="polite"
-                className="tap-target shrink-0 cursor-pointer rounded-full bg-paper/15 px-3.5 py-[7px] text-[12.5px] font-semibold text-ground transition-colors hover:bg-amber hover:text-ink focus-visible:outline-amber"
+                className="tap-target shrink-0 cursor-pointer rounded-md bg-paper/15 px-3.5 py-[7px] text-[12.5px] font-semibold text-ground transition-colors hover:bg-amber hover:text-ink focus-visible:outline-amber"
               >
                 {copied ? t.hero.copied : t.hero.copy}
               </button>
@@ -91,7 +91,7 @@ export function Hero() {
         </div>
 
         <div className="grid gap-3.5">
-          <div className="relative overflow-hidden rounded-[30px] bg-ink">
+          <div className="relative overflow-hidden rounded-xl bg-ink">
             {videoFailed ? (
               <div className="grid min-h-[300px] content-center place-items-center gap-3.5 bg-[repeating-linear-gradient(135deg,rgba(248,249,251,0.05)_0_2px,transparent_2px_12px)] px-8 py-11 text-center">
                 <span

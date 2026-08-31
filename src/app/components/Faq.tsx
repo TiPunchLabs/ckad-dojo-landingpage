@@ -21,7 +21,7 @@ export function Faq() {
         <div className="grid gap-3">
           {t.faq.items.map((item, i) => (
             <Reveal key={i} delay={staggerDelay(i)}>
-              <div className="overflow-hidden rounded-[22px] border border-ink/10 bg-paper">
+              <div className="overflow-hidden card">
                 <button
                   type="button"
                   onClick={() => setOpen(open === i ? -1 : i)}

@@ -42,7 +42,7 @@ export function Contributors() {
           titleMax="max-w-[24ch]"
           ledeMax="max-w-[58ch]"
         />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-2.5 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
           {CONTRIBUTORS.map((contributor, i) => {
             const text = t.contributors.items[i];
             if (!text) return null;
@@ -50,15 +50,19 @@ export function Contributors() {
               <Reveal key={contributor.handle} delay={staggerDelay(i)} className="h-full">
                 <a
                   href={contributor.href}
-                  className="grid h-full content-start gap-3 rounded-[26px] border border-ink/10 bg-paper p-6 text-ink transition-colors hover:border-accent/35"
+                  className="grid h-full content-start gap-2 card p-4 text-ink transition-colors hover:border-accent/35 sm:gap-3 sm:p-6"
                 >
-                  <span
-                    aria-hidden="true"
-                    className={`grid h-[52px] w-[52px] place-items-center rounded-full text-[17px] font-extrabold tracking-[-0.02em] ${contributor.avatarBg}`}
-                  >
-                    {contributor.initials}
-                  </span>
-                  <span className="font-mono text-[14.5px] font-medium">{contributor.handle}</span>
+                  <div className="flex items-center gap-3 sm:contents">
+                    <span
+                      aria-hidden="true"
+                      className={`grid h-10 w-10 shrink-0 place-items-center rounded-lg text-[15px] font-extrabold tracking-[-0.02em] sm:h-[52px] sm:w-[52px] sm:text-[17px] ${contributor.avatarBg}`}
+                    >
+                      {contributor.initials}
+                    </span>
+                    <span className="min-w-0 truncate font-mono text-[14.5px] font-medium">
+                      {contributor.handle}
+                    </span>
+                  </div>
                   <span className="text-[13px] font-bold text-accent">{text.role}</span>
                   <span className="text-sm leading-[1.55] text-ink/70">{text.text}</span>
                 </a>
@@ -68,7 +72,7 @@ export function Contributors() {
           <Reveal delay={staggerDelay(3)} className="h-full">
             <a
               href={CONTRIBUTING_URL}
-              className="grid h-full content-center gap-2.5 rounded-[26px] border-2 border-dashed border-ink/15 p-6 text-ink transition-colors hover:border-accent/40 hover:text-accent"
+              className="grid h-full content-center gap-1.5 card-dashed p-4 text-ink transition-colors hover:border-accent/40 hover:text-accent sm:gap-2.5 sm:p-6"
             >
               <span className="text-[21px] font-bold tracking-[-0.02em]">
                 {t.contributors.yourNameTitle}

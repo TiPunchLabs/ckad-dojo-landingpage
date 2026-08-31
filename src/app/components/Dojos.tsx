@@ -7,43 +7,21 @@ import { SectionHeading } from './SectionHeading';
 
 interface Dojo {
   name: keyof Dictionary['dojos']['items'];
-  kanji: string;
   stats: string;
-  /** Shishin guardians get a badge; the others show their index. */
-  shishin?: boolean;
-  iconBg: string;
 }
 
 const DOJOS: Dojo[] = [
-  {
-    name: 'Suzaku',
-    kanji: '朱雀',
-    stats: '21 q · 112 pts',
-    shishin: true,
-    iconBg: 'bg-pastel-blue',
-  },
-  {
-    name: 'Byakko',
-    kanji: '白虎',
-    stats: '20 q · 105 pts',
-    shishin: true,
-    iconBg: 'bg-pastel-gray',
-  },
-  {
-    name: 'Genbu',
-    kanji: '玄武',
-    stats: '20 q · 105 pts',
-    shishin: true,
-    iconBg: 'bg-pastel-teal',
-  },
-  { name: 'Kappa', kanji: '河童', stats: '17 q · 91 pts', iconBg: 'bg-pastel-sand' },
-  { name: 'Kirin', kanji: '麒麟', stats: '20 q · 105 pts', iconBg: 'bg-pastel-teal' },
-  { name: 'Tengu', kanji: '天狗', stats: '20 q · 100 pts', iconBg: 'bg-pastel-blue' },
-  { name: 'Tanuki', kanji: '狸', stats: '20 q · 100 pts', iconBg: 'bg-pastel-sand' },
-  { name: 'Inari', kanji: '稲荷', stats: '20 q · 100 pts', iconBg: 'bg-pastel-gray' },
-  { name: 'Ryujin', kanji: '龍神', stats: '20 q · 100 pts', iconBg: 'bg-pastel-teal' },
-  { name: 'Oni', kanji: '鬼', stats: '20 q · 102 pts', iconBg: 'bg-pastel-gray' },
-  { name: 'Amaterasu', kanji: '天照', stats: '20 q · 104 pts', iconBg: 'bg-pastel-sand' },
+  { name: 'Suzaku', stats: '21 q · 112 pts' },
+  { name: 'Byakko', stats: '20 q · 105 pts' },
+  { name: 'Genbu', stats: '20 q · 105 pts' },
+  { name: 'Kappa', stats: '17 q · 91 pts' },
+  { name: 'Kirin', stats: '20 q · 105 pts' },
+  { name: 'Tengu', stats: '20 q · 100 pts' },
+  { name: 'Tanuki', stats: '20 q · 100 pts' },
+  { name: 'Inari', stats: '20 q · 100 pts' },
+  { name: 'Ryujin', stats: '20 q · 100 pts' },
+  { name: 'Oni', stats: '20 q · 102 pts' },
+  { name: 'Amaterasu', stats: '20 q · 104 pts' },
 ];
 
 export function Dojos() {
@@ -59,45 +37,26 @@ export function Dojos() {
           titleMax="max-w-[24ch]"
           ledeMax="max-w-[60ch]"
         />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {DOJOS.map((dojo, i) => {
-            const text = t.dojos.items[dojo.name];
-            return (
-              <Reveal key={dojo.name} delay={staggerDelay(i)} className="h-full">
-                <div className="grid h-full content-start gap-2.5 rounded-3xl border border-ink/10 bg-paper p-[22px] transition-colors hover:border-accent/35">
-                  <div className="flex items-center justify-between">
-                    <span
-                      aria-hidden="true"
-                      className={`grid h-10 w-10 place-items-center rounded-[14px] font-jp text-sm font-medium ${dojo.iconBg}`}
-                    >
-                      {dojo.kanji}
-                    </span>
-                    {dojo.shishin ? (
-                      <span className="rounded-full bg-pastel-sand px-[11px] py-[5px] text-xs font-bold text-deep-sand">
-                        Shishin
-                      </span>
-                    ) : (
-                      <span aria-hidden="true" className="font-mono text-xs text-ink/35">
-                        {String(i + 1).padStart(2, '0')}
-                      </span>
-                    )}
-                  </div>
-                  <span className="text-[22px] font-bold tracking-[-0.02em]">{dojo.name}</span>
-                  <span className="text-[13.5px] leading-[1.45] text-ink/65">{text.subtitle}</span>
-                  <span className="font-mono text-[12.5px] text-accent">{dojo.stats}</span>
-                  <span className="text-[13.5px] italic leading-[1.5] text-ink/65">
-                    {text.quote}
-                  </span>
-                </div>
-              </Reveal>
-            );
-          })}
+        <div className="grid grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-4">
+          {DOJOS.map((dojo, i) => (
+            <Reveal key={dojo.name} delay={staggerDelay(i)} className="h-full">
+              <div className="grid h-full content-start gap-0.5 card p-4 sm:gap-2 sm:p-[22px]">
+                <span className="text-[17px] font-bold tracking-[-0.02em] sm:text-[22px]">
+                  {dojo.name}
+                </span>
+                <span className="hidden text-[13.5px] leading-[1.45] text-ink/65 sm:block">
+                  {t.dojos.items[dojo.name]}
+                </span>
+                <span className="font-mono text-xs text-accent sm:text-[12.5px]">{dojo.stats}</span>
+              </div>
+            </Reveal>
+          ))}
           <Reveal delay={staggerDelay(11)} className="h-full">
             <a
               href={CONTRIBUTING_URL}
-              className="grid h-full content-center gap-2.5 rounded-3xl border-2 border-dashed border-ink/15 p-[22px] text-ink transition-colors hover:border-accent/40 hover:text-accent"
+              className="grid h-full content-center gap-1.5 card-dashed p-4 text-ink transition-colors hover:border-accent/40 hover:text-accent sm:gap-2.5 sm:p-[22px]"
             >
-              <span className="text-[22px] font-bold tracking-[-0.02em]">
+              <span className="text-[17px] font-bold tracking-[-0.02em] sm:text-[22px]">
                 {t.dojos.dojo12Title}
               </span>
               <span className="text-[13.5px] leading-[1.5] text-ink/65">{t.dojos.dojo12Text}</span>
