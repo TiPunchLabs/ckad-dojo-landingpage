@@ -14,6 +14,8 @@ export const fr: Dictionary = {
     ],
     cta: 'Entrer dans le dojo',
     langToggle: 'Langue',
+    menuOpen: 'Ouvrir le menu',
+    menuClose: 'Fermer le menu',
   },
   hero: {
     title: (
@@ -22,7 +24,7 @@ export const fr: Dictionary = {
       </>
     ),
     lede: 'Onze simulations complètes, 218 questions, un chrono de 120 minutes et un score instantané. Le tout sur votre propre cluster, sans compte et sans cloud.',
-    ctaStart: 'Commencer gratuitement',
+    ctaStart: 'Commencer',
     ctaQuickstart: 'Voir le quickstart',
     copy: 'Copier',
     copied: 'Copié !',
@@ -76,50 +78,17 @@ export const fr: Dictionary = {
       </>
     ),
     items: {
-      Suzaku: {
-        subtitle: 'Phénix Vermillon du Sud · constellations',
-        quote: '« Le phénix renaît de ses cendres »',
-      },
-      Byakko: {
-        subtitle: "Tigre Blanc de l'Ouest · mythologie grecque",
-        quote: '« Le tigre frappe avec précision »',
-      },
-      Genbu: {
-        subtitle: 'Tortue Noire du Nord · mythologie nordique',
-        quote: '« La tortue porte le monde »',
-      },
-      Kappa: {
-        subtitle: 'Kappa des Rivières · eau & rivières',
-        quote: '« Le kappa connaît les eaux »',
-      },
-      Kirin: {
-        subtitle: 'Kirin Céleste · océan',
-        quote: '« Le kirin apporte la paix »',
-      },
-      Tengu: {
-        subtitle: 'Tengu des Montagnes · sommets',
-        quote: '« Le tengu garde la montagne »',
-      },
-      Tanuki: {
-        subtitle: 'Tanuki des Forêts · forêt',
-        quote: '« Le tanuki se cache dans la forêt »',
-      },
-      Inari: {
-        subtitle: 'Inari des Moissons · récoltes',
-        quote: '« Inari célèbre la moisson »',
-      },
-      Ryujin: {
-        subtitle: 'Ryujin des Profondeurs · mer',
-        quote: '« Ryujin commande les vagues »',
-      },
-      Oni: {
-        subtitle: 'Oni de la Porte des Démons · fortifications',
-        quote: '« Même le démon verse une larme »',
-      },
-      Amaterasu: {
-        subtitle: 'Amaterasu du Soleil Levant · lumière',
-        quote: '« Amaterasu guide la lumière »',
-      },
+      Suzaku: 'Thème : constellations',
+      Byakko: 'Thème : mythologie grecque',
+      Genbu: 'Thème : mythologie nordique',
+      Kappa: 'Thème : eau & rivières',
+      Kirin: 'Thème : océan',
+      Tengu: 'Thème : sommets',
+      Tanuki: 'Thème : forêt',
+      Inari: 'Thème : récoltes',
+      Ryujin: 'Thème : mer',
+      Oni: 'Thème : fortifications',
+      Amaterasu: 'Thème : lumière',
     },
     dojo12Title: 'Dojo 12 ?',
     dojo12Text: "La matrice de couverture liste ce qu'il reste à travailler. Les PR sont ouvertes.",

@@ -13,7 +13,7 @@ Landing page pour **CKAD Dojo**, plateforme d'entraînement à la certification
 | Build      | Vite 6                                |
 | Styling    | Tailwind CSS 4 (variables CSS custom) |
 | Animations | Motion (Framer Motion)                |
-| Icônes     | Lucide React                          |
+| Icônes     | SVG inline (logo, burger)             |
 
 ## Démarrage rapide
 

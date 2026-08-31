@@ -1,6 +1,6 @@
 # ckad-dojo-landingpage
 
-Landing page CKAD Dojo — React 18 + TypeScript, Vite 6, Tailwind CSS 4, Motion, Lucide.
+Landing page CKAD Dojo — React 18 + TypeScript, Vite 6, Tailwind CSS 4, Motion.
 Projet type: node-frontend (même patron que `celine-kazarian`).
 
 ## Commands

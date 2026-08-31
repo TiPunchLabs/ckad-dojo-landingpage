@@ -26,11 +26,29 @@
   /* Typographies */
   --font-body: 'Outfit', 'Helvetica Neue', Helvetica, sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
-  --font-jp: 'Noto Sans JP', sans-serif;
 
   /* Grille de page (maquette : conteneur 1200px, rythme vertical 84px) */
   --container-page: 1200px;
   --spacing-section: 84px;
+
+  /* Échelle d'arrondis volontairement plus serrée que les valeurs Tailwind
+     par défaut — coins à peine adoucis sur tout le site. */
+  --radius-xl: 8px;
+  --radius-lg: 6px;
+  --radius-md: 4px;
+}
+
+/* Shared card shell (radius + border + paper ground); padding stays per component. */
+@utility card {
+  border-radius: var(--radius-lg);
+  border: 1px solid --alpha(var(--color-ink) / 10%);
+  background-color: var(--color-paper);
+}
+
+/* Dashed variant for the "contribute here" cards. */
+@utility card-dashed {
+  border-radius: var(--radius-lg);
+  border: 2px dashed --alpha(var(--color-ink) / 15%);
 }
 
 html {
@@ -64,12 +82,18 @@ code {
   outline-offset: 2px;
 }
 
-/* Extends a sub-44px control's tap area without changing its visual size. */
+/* Guarantees a ≥44px vertical tap area whatever the control's own height,
+   without changing its visual size. Horizontal extension stays at 0 so
+   adjacent controls (lang toggle, install tabs) never overlap. */
 .tap-target {
   position: relative;
 }
 .tap-target::before {
   content: '';
   position: absolute;
-  inset: -6px 0;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: max(100%, 44px);
+  transform: translateY(-50%);
 }

@@ -32,21 +32,25 @@ export function HowItWorks() {
           titleMax="max-w-[22ch]"
           ledeMax="max-w-[56ch]"
         />
-        <div className="grid gap-[18px] sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-2.5 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 lg:gap-[18px]">
           {t.howItWorks.steps.map((step, i) => {
             const style = STEP_STYLES[i];
             if (!style) return null;
             return (
               <Reveal key={style.code} delay={staggerDelay(i)} className="h-full">
                 <div
-                  className={`grid h-full min-h-[260px] content-start gap-3 rounded-[26px] p-[26px] ${style.cardBg}`}
+                  className={`grid h-full content-start gap-2 rounded-lg p-4 sm:gap-3 sm:p-[26px] lg:min-h-[260px] ${style.cardBg}`}
                 >
-                  <span
-                    className={`grid h-10 w-10 place-items-center rounded-[14px] bg-ground text-[17px] font-extrabold ${style.accent}`}
-                  >
-                    {i + 1}
-                  </span>
-                  <span className="text-[21px] font-bold tracking-[-0.02em]">{step.title}</span>
+                  <div className="flex items-center gap-3 sm:contents">
+                    <span
+                      className={`grid h-8 w-8 shrink-0 place-items-center rounded-md bg-ground text-[15px] font-extrabold sm:h-10 sm:w-10 sm:text-[17px] ${style.accent}`}
+                    >
+                      {i + 1}
+                    </span>
+                    <span className="text-[17px] font-bold tracking-[-0.02em] sm:text-[21px]">
+                      {step.title}
+                    </span>
+                  </div>
                   <span className="text-[14.5px] leading-[1.55] text-ink/70">{step.text}</span>
                   <code
                     className={`mt-auto text-xs ${'codeAccent' in style ? style.codeAccent : style.accent}`}

@@ -1,8 +1,8 @@
 /**
  * English dictionary — source of truth for the `Dictionary` type.
  * `fr.tsx` is annotated with this type, so the compiler flags any missing
- * or mistyped key. Structural data (kanji, colors, stats, commands, URLs)
- * stays in the components; only reader-facing text lives here.
+ * or mistyped key. Structural data (stats, commands, URLs) stays in the
+ * components; only reader-facing text lives here.
  */
 export const en = {
   meta: {
@@ -17,6 +17,8 @@ export const en = {
     ],
     cta: 'Enter the dojo',
     langToggle: 'Language',
+    menuOpen: 'Open menu',
+    menuClose: 'Close menu',
   },
   hero: {
     title: (
@@ -25,7 +27,7 @@ export const en = {
       </>
     ),
     lede: 'Eleven full mock exams, 218 questions, a 120-minute timer and instant scoring. All on your own cluster — no account, no cloud.',
-    ctaStart: 'Start for free',
+    ctaStart: 'Get started',
     ctaQuickstart: 'See the quickstart',
     copy: 'Copy',
     copied: 'Copied!',
@@ -79,50 +81,17 @@ export const en = {
       </>
     ),
     items: {
-      Suzaku: {
-        subtitle: 'Vermilion Phoenix of the South · constellations',
-        quote: '“The phoenix rises from its ashes”',
-      },
-      Byakko: {
-        subtitle: 'White Tiger of the West · Greek mythology',
-        quote: '“The tiger strikes with precision”',
-      },
-      Genbu: {
-        subtitle: 'Black Tortoise of the North · Norse mythology',
-        quote: '“The tortoise carries the world”',
-      },
-      Kappa: {
-        subtitle: 'Kappa of the Rivers · water & rivers',
-        quote: '“The kappa knows the waters”',
-      },
-      Kirin: {
-        subtitle: 'Celestial Kirin · ocean',
-        quote: '“The kirin brings peace”',
-      },
-      Tengu: {
-        subtitle: 'Tengu of the Mountains · summits',
-        quote: '“The tengu guards the mountain”',
-      },
-      Tanuki: {
-        subtitle: 'Tanuki of the Forests · forest',
-        quote: '“The tanuki hides in the forest”',
-      },
-      Inari: {
-        subtitle: 'Inari of the Harvests · harvests',
-        quote: '“Inari celebrates the harvest”',
-      },
-      Ryujin: {
-        subtitle: 'Ryujin of the Depths · sea',
-        quote: '“Ryujin commands the waves”',
-      },
-      Oni: {
-        subtitle: 'Oni of the Demon Gate · fortifications',
-        quote: '“Even the demon sheds a tear”',
-      },
-      Amaterasu: {
-        subtitle: 'Amaterasu of the Rising Sun · light',
-        quote: '“Amaterasu guides the light”',
-      },
+      Suzaku: 'Theme: constellations',
+      Byakko: 'Theme: Greek mythology',
+      Genbu: 'Theme: Norse mythology',
+      Kappa: 'Theme: water & rivers',
+      Kirin: 'Theme: ocean',
+      Tengu: 'Theme: mountain summits',
+      Tanuki: 'Theme: forest',
+      Inari: 'Theme: harvests',
+      Ryujin: 'Theme: sea',
+      Oni: 'Theme: fortifications',
+      Amaterasu: 'Theme: light',
     },
     dojo12Title: 'Dojo 12?',
     dojo12Text: 'The coverage matrix lists what still needs work. PRs are welcome.',
