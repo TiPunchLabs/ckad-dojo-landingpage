@@ -1,0 +1,11 @@
+dist/
+node_modules/
+pnpm-lock.yaml
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.svg
+*.ico
+.venv/
+github-terraform/

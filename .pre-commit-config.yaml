@@ -1,0 +1,35 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: detect-private-key
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.16
+    hooks:
+      # Linter (avant le formatter quand --fix est actif)
+      - id: ruff-check
+        args: [--fix]
+      # Formatter
+      - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: eslint
+        name: eslint
+        entry: pnpm lint
+        language: system
+        pass_filenames: false
+        types_or: [ts, tsx]
+
+      - id: prettier
+        name: prettier
+        entry: pnpm format:check
+        language: system
+        pass_filenames: false
+        types_or: [ts, tsx, css, json]

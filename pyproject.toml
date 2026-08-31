@@ -1,0 +1,16 @@
+[project]
+name = "ckad-dojo-landingpage"
+version = "0.1.0"
+description = "Tooling env (pre-commit) for the CKAD Dojo landing page"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pre-commit>=4.5.1",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# E/F = pyflakes + pycodestyle, I = isort, UP = pyupgrade, B = bugbear
+select = ["E", "F", "I", "UP", "B"]
