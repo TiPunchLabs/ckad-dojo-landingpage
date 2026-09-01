@@ -28,7 +28,6 @@ static files (Netlify-ready via `netlify.toml`).
 | `src/app/App.tsx`      | Root component — page sections composed here          |
 | `src/app/components/`  | One component per landing section (from the mockup)   |
 | `src/styles/theme.css` | Design system — CSS custom properties (colors, fonts) |
-| `src/styles/fonts.css` | Font imports                                          |
 | `.github/workflows/`   | CI: lint + format check, then build                   |
 
 ## Design Decisions
