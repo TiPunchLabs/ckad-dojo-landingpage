@@ -3,7 +3,9 @@ import type { Dictionary } from './en';
 /** French dictionary — must mirror the shape of `en.tsx` (enforced by the type). */
 export const fr: Dictionary = {
   meta: {
-    title: 'CKAD Dojo — Le CKAD, mais en mode dojo',
+    title: "CKAD Dojo — Simulateur d'examen CKAD gratuit",
+    description:
+      "CKAD Dojo, simulateur d'examen CKAD gratuit : 11 examens blancs, 218 exercices CKAD, entraînement chronométré (120 min) et score instantané sur votre propre cluster. Préparez et réussissez la certification Kubernetes.",
   },
   header: {
     nav: [
