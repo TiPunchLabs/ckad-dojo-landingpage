@@ -3,6 +3,8 @@
 Landing page pour **CKAD Dojo**, plateforme d'entraînement à la certification
 **CKAD** (Certified Kubernetes Application Developer).
 
+**🌐 Site en ligne : [ckad-dojo.tipunchlabs.fr](https://ckad-dojo.tipunchlabs.fr/)**
+
 > _« Le dojo Kubernetes : la certification se gagne à l'entraînement. »_
 
 ## Stack technique
