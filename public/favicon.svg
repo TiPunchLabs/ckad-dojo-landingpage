@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="4" fill="#1B45D6"/>
-  <!-- Same path data as the logo tile in src/app/components/Header.tsx (24-viewBox);
+  <rect width="32" height="32" rx="6" fill="#1B45D6"/>
+  <!-- Same path data as the logo in src/app/components/Header.tsx (24-viewBox);
        only the stroke widths are bolder, for 16px legibility. -->
-  <svg x="4" y="4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EDEFF2" stroke-linecap="round" stroke-linejoin="round">
+  <svg x="4" y="4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
     <path stroke-width="2.4" d="M12 2.6 20.2 7.3v9.4L12 21.4 3.8 16.7V7.3Z"/>
     <path stroke-width="3" d="M9.8 9.2 13.6 12l-3.8 2.8"/>
   </svg>

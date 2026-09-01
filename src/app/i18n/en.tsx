@@ -15,12 +15,14 @@ export const en = {
       { href: '#contributeurs', label: 'Contributors' },
       { href: '#faq', label: 'FAQ' },
     ],
+    ticker: 'Dojo Suzaku · 21 questions · 112 pts — CKAD v1.35 curriculum covered up to 84%',
     cta: 'Enter the dojo',
     langToggle: 'Language',
     menuOpen: 'Open menu',
     menuClose: 'Close menu',
   },
   hero: {
+    eyebrow: 'Exam simulator · Self-hosted',
     title: (
       <>
         The CKAD, but <span className="text-accent">dojo style</span>.
@@ -43,7 +45,7 @@ export const en = {
     caption: 'Screenshot of the web UI · timer, questions and embedded terminal',
   },
   howItWorks: {
-    eyebrow: 'Easyyy does it',
+    eyebrow: 'The loop',
     title: 'Four commands, one training loop.',
     lede: 'The simulator sets up the training ground, you practice, it keeps score, then resets everything. As many times as it takes.',
     steps: [
@@ -71,7 +73,7 @@ export const en = {
     ],
   },
   dojos: {
-    eyebrow: 'Eleven themed dojos',
+    eyebrow: 'The dojos',
     title: 'Choose your guardian.',
     lede: (
       <>
@@ -81,18 +83,20 @@ export const en = {
       </>
     ),
     items: {
-      Suzaku: 'Theme: constellations',
-      Byakko: 'Theme: Greek mythology',
-      Genbu: 'Theme: Norse mythology',
-      Kappa: 'Theme: water & rivers',
-      Kirin: 'Theme: ocean',
-      Tengu: 'Theme: mountain summits',
-      Tanuki: 'Theme: forest',
-      Inari: 'Theme: harvests',
-      Ryujin: 'Theme: sea',
-      Oni: 'Theme: fortifications',
-      Amaterasu: 'Theme: light',
+      Suzaku: 'Constellations',
+      Byakko: 'Greek mythology',
+      Genbu: 'Norse mythology',
+      Kappa: 'Water & rivers',
+      Kirin: 'Ocean',
+      Tengu: 'Mountain summits',
+      Tanuki: 'Forest',
+      Inari: 'Harvests',
+      Ryujin: 'Sea',
+      Oni: 'Fortifications',
+      Amaterasu: 'Light',
     },
+    themeHeader: 'Theme',
+    contribute: 'Contribute',
     dojo12Title: 'Dojo 12?',
     dojo12Text: 'The coverage matrix lists what still needs work. PRs are welcome.',
   },
@@ -118,7 +122,7 @@ export const en = {
     ],
   },
   contributors: {
-    eyebrow: 'Credit where due',
+    eyebrow: 'Contributors',
     title: 'Contributors, front and center.',
     lede: 'Humans, not bots: automated accounts (dependabot, pre-commit.ci) are not listed here. Five of the eleven dojos come from work shared by the community and adapted to the simulator.',
     items: [
@@ -139,7 +143,7 @@ export const en = {
     yourNameText: 'A dojo, a question, a scoring fix: everything counts. CC BY-NC-SA 4.0 license.',
   },
   faq: {
-    eyebrow: 'The questions that keep coming',
+    eyebrow: 'FAQ',
     title: 'FAQ, short version.',
     lede: 'Missing one? Open an issue — the answer will end up in the README.',
     items: [
