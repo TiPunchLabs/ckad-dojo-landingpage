@@ -12,12 +12,14 @@ export const fr: Dictionary = {
       { href: '#contributeurs', label: 'Contributeurs' },
       { href: '#faq', label: 'FAQ' },
     ],
+    ticker: 'Dojo Suzaku · 21 questions · 112 pts — programme CKAD v1.35 couvert à 84%',
     cta: 'Entrer dans le dojo',
     langToggle: 'Langue',
     menuOpen: 'Ouvrir le menu',
     menuClose: 'Fermer le menu',
   },
   hero: {
+    eyebrow: "Simulateur d'examen · Auto-hébergé",
     title: (
       <>
         Le CKAD, mais en <span className="text-accent">mode dojo</span>.
@@ -40,7 +42,7 @@ export const fr: Dictionary = {
     caption: "Capture de l'interface web · chrono, questions et terminal embarqué",
   },
   howItWorks: {
-    eyebrow: "C'est easyyy",
+    eyebrow: 'La boucle',
     title: "Quatre commandes, une boucle d'entraînement.",
     lede: 'Le simulateur installe le terrain, vous vous entraînez, il compte les points, puis il remet tout à zéro. Autant de fois que nécessaire.',
     steps: [
@@ -68,7 +70,7 @@ export const fr: Dictionary = {
     ],
   },
   dojos: {
-    eyebrow: 'Onze dojos thématiques',
+    eyebrow: 'Les dojos',
     title: 'Choisissez votre gardien.',
     lede: (
       <>
@@ -78,18 +80,20 @@ export const fr: Dictionary = {
       </>
     ),
     items: {
-      Suzaku: 'Thème : constellations',
-      Byakko: 'Thème : mythologie grecque',
-      Genbu: 'Thème : mythologie nordique',
-      Kappa: 'Thème : eau & rivières',
-      Kirin: 'Thème : océan',
-      Tengu: 'Thème : sommets',
-      Tanuki: 'Thème : forêt',
-      Inari: 'Thème : récoltes',
-      Ryujin: 'Thème : mer',
-      Oni: 'Thème : fortifications',
-      Amaterasu: 'Thème : lumière',
+      Suzaku: 'Constellations',
+      Byakko: 'Mythologie grecque',
+      Genbu: 'Mythologie nordique',
+      Kappa: 'Eau & rivières',
+      Kirin: 'Océan',
+      Tengu: 'Sommets',
+      Tanuki: 'Forêt',
+      Inari: 'Récoltes',
+      Ryujin: 'Mer',
+      Oni: 'Fortifications',
+      Amaterasu: 'Lumière',
     },
+    themeHeader: 'Thème',
+    contribute: 'Contribuer',
     dojo12Title: 'Dojo 12 ?',
     dojo12Text: "La matrice de couverture liste ce qu'il reste à travailler. Les PR sont ouvertes.",
   },
@@ -115,7 +119,7 @@ export const fr: Dictionary = {
     ],
   },
   contributors: {
-    eyebrow: 'Merci à eux',
+    eyebrow: 'Contributeurs',
     title: "Les contributeurs à l'honneur.",
     lede: 'Des humains, pas des bots : les comptes automatisés (dependabot, pre-commit.ci) ne figurent pas ici. Cinq dojos sur onze viennent de travaux partagés par la communauté et adaptés au simulateur.',
     items: [
@@ -137,7 +141,7 @@ export const fr: Dictionary = {
       'Un dojo, une question, une correction de scoring : tout est bon à prendre. Licence CC BY-NC-SA 4.0.',
   },
   faq: {
-    eyebrow: 'Les questions qui reviennent',
+    eyebrow: 'FAQ',
     title: 'FAQ, version courte.',
     lede: 'Il en manque une ? Ouvrez une issue, la réponse finira dans le README.',
     items: [

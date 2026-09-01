@@ -23,14 +23,17 @@ pnpm format:check  # prettier
 - `src/app/lib/site.ts` — liens GitHub (source de vérité, y compris pour les commandes
   d'installation du Hero) ; `GITHUB_STARS` n'est qu'un fallback, le compteur réel vient de
   l'API GitHub via `useGithubStars` (une requête par session, cache sessionStorage).
-- `src/styles/theme.css` — tokens `@theme` Tailwind 4 : palette (ground/ink/accent/pastels),
-  fonts, grille de page (`max-w-page` = 1200px, rythme `*-section` = 84px), règle de base
-  `code → font-mono`. Ne jamais hardcoder une couleur. Google Fonts chargées via `<link>`
-  dans `index.html`.
+- `src/styles/theme.css` — tokens `@theme` Tailwind 4 : palette maquette v5
+  (paper blanc / ink #0c0e12 / accent bleu #1b45d6 / sky / line hairline / tint-1..5),
+  fonts (Instrument Sans + IBM Plex Mono), grille de page (`max-w-page` = 1240px),
+  radius 6/8px, utilities `boxed`/`btn`/`mono-label`/`scrollbar-slim`/`tap-target`.
+  Ne jamais hardcoder une couleur. Google Fonts chargées via `<link>` dans `index.html`.
+- Maquette de référence : `~/Téléchargements/CKAD Dojo Landing Page(1)/CKAD Dojo Landing v5.dc.html`
+  — **guide de design, pas de structure** ; décisions actées : pas de caractères CJK,
+  logo hexagone+prompt conservé.
 - Vidéo de démo du hero : optionnelle, attendue sous `public/media/demo.webm`
   (placeholder affiché sinon).
 - Alias `@` → `src/`.
-- Maquette de référence : `~/Téléchargements/CKAD Dojo Landing Page/CKAD Dojo Landing v4.dc.html`.
 
 ## Conventions
 
