@@ -22,6 +22,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     document.documentElement.lang = lang;
     document.title = DICTIONARIES[lang].meta.title;
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute('content', DICTIONARIES[lang].meta.description);
   }, [lang]);
 
   return (

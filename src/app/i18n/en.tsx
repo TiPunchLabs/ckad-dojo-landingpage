@@ -6,7 +6,9 @@
  */
 export const en = {
   meta: {
-    title: 'CKAD Dojo — The CKAD, but dojo style',
+    title: 'CKAD Dojo — Free CKAD Exam Simulator',
+    description:
+      'CKAD Dojo, free CKAD exam simulator: 11 timed mock exams, 218 practice exercises and instant scoring on your own Kubernetes cluster. Prepare and pass the CKAD certification.',
   },
   header: {
     nav: [

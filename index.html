@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CKAD Dojo — The CKAD, but dojo style</title>
+    <title>CKAD Dojo — Free CKAD Exam Simulator</title>
     <meta
       name="description"
-      content="Eleven full CKAD mock exams, 218 questions, a 120-minute timer and instant scoring. All on your own Kubernetes cluster — no account, no cloud."
+      content="CKAD Dojo, free CKAD exam simulator: 11 timed mock exams, 218 practice exercises and instant scoring on your own Kubernetes cluster. Prepare and pass the CKAD certification."
+    />
+    <meta
+      name="keywords"
+      content="CKAD, CKAD Dojo, CKAD exam simulator, CKAD exercises, CKAD practice, timed training, Kubernetes certification, simulateur d'examen CKAD, exercices CKAD, entraînement chronométré, certification Kubernetes"
     />
     <meta name="theme-color" content="#ffffff" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -17,10 +21,11 @@
       rel="stylesheet"
     />
     <link rel="canonical" href="https://ckad-dojo.tipunchlabs.fr/" />
-    <meta property="og:title" content="CKAD Dojo — The CKAD, but dojo style" />
+    <meta property="og:site_name" content="CKAD Dojo" />
+    <meta property="og:title" content="CKAD Dojo — Free CKAD Exam Simulator" />
     <meta
       property="og:description"
-      content="Eleven full mock exams, 218 questions, a 120-minute timer and instant scoring. On your own cluster — no account, no cloud."
+      content="11 timed CKAD mock exams, 218 practice exercises, instant scoring on your own Kubernetes cluster. Free, no account, no cloud."
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
@@ -34,6 +39,76 @@
       content="CKAD Dojo — The CKAD, but dojo style. 11 mock exams, 218 questions, 120 minutes, instant scoring."
     />
     <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CKAD Dojo",
+        "alternateName": "ckad-dojo",
+        "url": "https://ckad-dojo.tipunchlabs.fr/",
+        "description": "Free CKAD exam simulator: 11 timed mock exams, 218 practice exercises, a 120-minute timer and instant scoring computed from the real state of your own Kubernetes cluster.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Linux, macOS",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+        "inLanguage": ["en", "fr"],
+        "keywords": "CKAD, CKAD Dojo, CKAD exam simulator, CKAD exercises, timed training, Kubernetes certification",
+        "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "author": {
+          "@type": "Person",
+          "name": "xgueret",
+          "url": "https://xgueret.tipunchlabs.fr/"
+        },
+        "sameAs": ["https://github.com/TiPunchLabs/ckad-dojo"]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need a Kubernetes cluster?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, your own: kubeadm, minikube or kind, 1.28+. The dojo provisions namespaces, workloads and Helm releases on it, then cleans everything up at the end. Nothing leaves for the cloud."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does scoring work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bash functions query the real state of the cluster: over 400 criteria, question by question. You can score at any point during training, not just at the end."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to know Python or uv?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The ckad-dojo CLI simply wraps the bash scripts — and if you prefer, ./scripts/ckad-exam.sh does exactly the same thing without Python."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do the questions feel like the real exam?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They follow the CKAD v1.35 curriculum and the real exam's /opt/course/N/ paths, mapped locally. They are original exercises, not leaked exam questions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What license?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CC BY-NC-SA 4.0: free for personal and educational use, modifications under the same license, no commercial use without the author's explicit agreement."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
