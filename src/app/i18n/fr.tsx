@@ -5,7 +5,7 @@ export const fr: Dictionary = {
   meta: {
     title: "CKAD Dojo — Simulateur d'examen CKAD gratuit",
     description:
-      "CKAD Dojo, simulateur d'examen CKAD gratuit : 11 examens blancs, 218 exercices CKAD, entraînement chronométré (120 min) et score instantané sur votre propre cluster. Préparez et réussissez la certification Kubernetes.",
+      "CKAD Dojo, simulateur d'examen CKAD gratuit : 11 examens blancs gratuits, 218 exercices, entraînement CKAD chronométré et score instantané sur votre propre cluster. Préparez et réussissez la certification Kubernetes.",
   },
   header: {
     nav: [
@@ -21,13 +21,13 @@ export const fr: Dictionary = {
     menuClose: 'Fermer le menu',
   },
   hero: {
-    eyebrow: "Simulateur d'examen · Auto-hébergé",
+    eyebrow: "Simulateur d'examen CKAD gratuit · Auto-hébergé",
     title: (
       <>
         Le CKAD, mais en <span className="text-accent">mode dojo</span>.
       </>
     ),
-    lede: 'Onze simulations complètes, 218 questions, un chrono de 120 minutes et un score instantané. Le tout sur votre propre cluster, sans compte et sans cloud.',
+    lede: 'Onze examens blancs CKAD gratuits, 218 questions, un chrono de 120 minutes et un score instantané. Le tout sur votre propre cluster, sans compte et sans cloud.',
     ctaStart: 'Commencer',
     ctaQuickstart: 'Voir le quickstart',
     copy: 'Copier',
@@ -45,7 +45,7 @@ export const fr: Dictionary = {
   },
   howItWorks: {
     eyebrow: 'La boucle',
-    title: "Quatre commandes, une boucle d'entraînement.",
+    title: "Quatre commandes, une boucle d'entraînement CKAD.",
     lede: 'Le simulateur installe le terrain, vous vous entraînez, il compte les points, puis il remet tout à zéro. Autant de fois que nécessaire.',
     steps: [
       {
@@ -104,7 +104,7 @@ export const fr: Dictionary = {
     title: 'Les questions à gauche, le vrai shell à droite.',
     text: "Un panneau ttyd intégré à l'interface : même geste que dans l'examen réel, sans jongler entre les fenêtres. La session survit à la navigation entre questions.",
     screenshotAlt:
-      'Interface web CKAD Dojo : question à gauche, terminal embarqué à droite, chrono de 120 minutes en haut',
+      "Interface du simulateur d'examen CKAD : question à gauche, terminal embarqué à droite, chrono de 120 minutes en haut",
     cards: [
       {
         title: 'Alertes de chrono',

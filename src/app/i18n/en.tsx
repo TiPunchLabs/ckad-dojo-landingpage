@@ -8,7 +8,7 @@ export const en = {
   meta: {
     title: 'CKAD Dojo — Free CKAD Exam Simulator',
     description:
-      'CKAD Dojo, free CKAD exam simulator: 11 timed mock exams, 218 practice exercises and instant scoring on your own Kubernetes cluster. Prepare and pass the CKAD certification.',
+      'CKAD Dojo, free CKAD exam simulator: 11 free mock exams, 218 exercises, timed CKAD training and instant scoring on your own Kubernetes cluster. Prepare and pass the certification.',
   },
   header: {
     nav: [
@@ -24,13 +24,13 @@ export const en = {
     menuClose: 'Close menu',
   },
   hero: {
-    eyebrow: 'Exam simulator · Self-hosted',
+    eyebrow: 'Free CKAD exam simulator · Self-hosted',
     title: (
       <>
         The CKAD, but <span className="text-accent">dojo style</span>.
       </>
     ),
-    lede: 'Eleven full mock exams, 218 questions, a 120-minute timer and instant scoring. All on your own cluster — no account, no cloud.',
+    lede: 'Eleven free CKAD mock exams, 218 questions, a 120-minute timer and instant scoring. All on your own cluster — no account, no cloud.',
     ctaStart: 'Get started',
     ctaQuickstart: 'See the quickstart',
     copy: 'Copy',
@@ -48,7 +48,7 @@ export const en = {
   },
   howItWorks: {
     eyebrow: 'The loop',
-    title: 'Four commands, one training loop.',
+    title: 'Four commands, one CKAD training loop.',
     lede: 'The simulator sets up the training ground, you practice, it keeps score, then resets everything. As many times as it takes.',
     steps: [
       {
@@ -107,7 +107,7 @@ export const en = {
     title: 'Questions on the left, a real shell on the right.',
     text: 'A ttyd panel built into the UI: the same gesture as the real exam, without juggling windows. The session survives navigating between questions.',
     screenshotAlt:
-      'CKAD Dojo web interface: question on the left, embedded terminal on the right, 120-minute timer at the top',
+      'CKAD exam simulator interface: question on the left, embedded terminal on the right, 120-minute timer at the top',
     cards: [
       {
         title: 'Timer alerts',
