@@ -7,6 +7,7 @@ import { SectionHeading } from './SectionHeading';
 /** Per-contributor structural data; role and text live in the dictionaries. */
 const CONTRIBUTORS = [
   { href: 'https://github.com/TiPunchLabs', handle: 'TiPunchLabs' },
+  { href: 'https://github.com/Sai7Teja', handle: '@Sai7Teja' },
   { href: 'https://github.com/dgkanatsios', handle: '@dgkanatsios' },
   { href: 'https://github.com/aravind4799', handle: '@aravind4799' },
 ];
@@ -24,7 +25,7 @@ export function Contributors() {
           lede={t.contributors.lede}
           ledeMax="max-w-[66ch]"
         />
-        <div className="grid boxed bg-paper sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid boxed bg-paper sm:grid-cols-2 lg:grid-cols-5">
           {CONTRIBUTORS.map((contributor, i) => {
             const text = t.contributors.items[i];
             if (!text) return null;

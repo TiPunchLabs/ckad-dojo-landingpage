@@ -8,16 +8,16 @@ export const en = {
   meta: {
     title: 'CKAD Dojo — Free CKAD Exam Simulator',
     description:
-      'CKAD Dojo, free CKAD exam simulator: 11 free mock exams, 218 exercises, timed CKAD training and instant scoring on your own Kubernetes cluster. Prepare and pass the certification.',
+      'CKAD Dojo, free CKAD exam simulator: 20 free mock exams, 398 exercises, timed CKAD training and instant scoring on your own Kubernetes cluster. Prepare and pass the certification.',
   },
   header: {
     nav: [
       { href: '#comment', label: 'How it works' },
-      { href: '#dojos', label: 'The 11 dojos' },
+      { href: '#dojos', label: 'The 20 dojos' },
       { href: '#contributeurs', label: 'Contributors' },
       { href: '#faq', label: 'FAQ' },
     ],
-    ticker: 'Dojo Suzaku · 21 questions · 112 pts — CKAD v1.35 curriculum covered up to 84%',
+    ticker: 'New: 9 dojos join the roster — 20 dojos · 398 questions · CKAD v1.35',
     cta: 'Enter the dojo',
     langToggle: 'Language',
     menuOpen: 'Open menu',
@@ -30,7 +30,7 @@ export const en = {
         The CKAD, but <span className="text-accent">dojo style</span>.
       </>
     ),
-    lede: 'Eleven free CKAD mock exams, 218 questions, a 120-minute timer and instant scoring. All on your own cluster — no account, no cloud.',
+    lede: 'Twenty free CKAD mock exams, 398 questions, a 120-minute timer and instant scoring. All on your own cluster — no account, no cloud.',
     ctaStart: 'Get started',
     ctaQuickstart: 'See the quickstart',
     copy: 'Copy',
@@ -79,8 +79,8 @@ export const en = {
     title: 'Choose your guardian.',
     lede: (
       <>
-        Three dojos are named after the Shishin, the celestial guardians; the other eight after
-        creatures of Japanese folklore. Each dojo's resources follow its theme, so{' '}
+        Three dojos are named after the Shishin, the celestial guardians; the other seventeen after
+        figures of Japanese myth and legend. Each dojo's resources follow its theme, so{' '}
         <code className="text-[15px] text-accent">kubectl get pods</code> reads like a story.
       </>
     ),
@@ -96,11 +96,22 @@ export const en = {
       Ryujin: 'Sea',
       Oni: 'Fortifications',
       Amaterasu: 'Light',
+      Tsukuyomi: 'Moonlit gloom',
+      Fujin: 'Storm winds',
+      Raijin: 'Thunder & lightning',
+      Susanoo: 'Sea & tide',
+      Benzaiten: 'Harmony & flow',
+      Hachiman: 'Strategy & battle',
+      Izanagi: 'Creation & order',
+      Bishamonten: 'Vigil & defense',
+      Musashi: 'Mastery & duels',
     },
     themeHeader: 'Theme',
+    creditHeader: 'Credit',
+    shuffle: 'Shuffle',
     contribute: 'Contribute',
-    dojo12Title: 'Dojo 12?',
-    dojo12Text: 'The coverage matrix lists what still needs work. PRs are welcome.',
+    dojoNextTitle: 'Dojo 21?',
+    dojoNextText: 'The coverage matrix lists what still needs work. PRs are welcome.',
   },
   features: {
     badge: 'Embedded terminal',
@@ -126,11 +137,15 @@ export const en = {
   contributors: {
     eyebrow: 'Contributors',
     title: 'Contributors, front and center.',
-    lede: 'Humans, not bots: automated accounts (dependabot, pre-commit.ci) are not listed here. Five of the eleven dojos come from work shared by the community and adapted to the simulator.',
+    lede: 'Humans, not bots: automated accounts (dependabot, pre-commit.ci) are not listed here. Fourteen of the twenty dojos come from the community — five adapted from shared work, nine contributed as original content.',
     items: [
       {
         role: 'Maintainer',
         text: 'Built the simulator, the CLI, the web UI and the automatic scoring. 300 commits.',
+      },
+      {
+        role: '9 original dojos',
+        text: 'Nine original dojos, Tsukuyomi through Musashi — 180 questions pushing into the advanced end of the roster.',
       },
       {
         role: '4 dojos adapted',
