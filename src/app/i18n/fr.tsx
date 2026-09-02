@@ -5,16 +5,16 @@ export const fr: Dictionary = {
   meta: {
     title: "CKAD Dojo — Simulateur d'examen CKAD gratuit",
     description:
-      "CKAD Dojo, simulateur d'examen CKAD gratuit : 11 examens blancs gratuits, 218 exercices, entraînement CKAD chronométré et score instantané sur votre propre cluster. Préparez et réussissez la certification Kubernetes.",
+      "CKAD Dojo, simulateur d'examen CKAD gratuit : 20 examens blancs gratuits, 398 exercices, entraînement CKAD chronométré et score instantané sur votre propre cluster. Préparez et réussissez la certification Kubernetes.",
   },
   header: {
     nav: [
       { href: '#comment', label: 'Comment ça marche' },
-      { href: '#dojos', label: 'Les 11 dojos' },
+      { href: '#dojos', label: 'Les 20 dojos' },
       { href: '#contributeurs', label: 'Contributeurs' },
       { href: '#faq', label: 'FAQ' },
     ],
-    ticker: 'Dojo Suzaku · 21 questions · 112 pts — programme CKAD v1.35 couvert à 84%',
+    ticker: 'Nouveau : 9 dojos rejoignent le tableau — 20 dojos · 398 questions · CKAD v1.35',
     cta: 'Entrer dans le dojo',
     langToggle: 'Langue',
     menuOpen: 'Ouvrir le menu',
@@ -27,7 +27,7 @@ export const fr: Dictionary = {
         Le CKAD, mais en <span className="text-accent">mode dojo</span>.
       </>
     ),
-    lede: 'Onze examens blancs CKAD gratuits, 218 questions, un chrono de 120 minutes et un score instantané. Le tout sur votre propre cluster, sans compte et sans cloud.',
+    lede: 'Vingt examens blancs CKAD gratuits, 398 questions, un chrono de 120 minutes et un score instantané. Le tout sur votre propre cluster, sans compte et sans cloud.',
     ctaStart: 'Commencer',
     ctaQuickstart: 'Voir le quickstart',
     copy: 'Copier',
@@ -76,9 +76,10 @@ export const fr: Dictionary = {
     title: 'Choisissez votre gardien.',
     lede: (
       <>
-        Trois dojos portent le nom des Shishin, les gardiens célestes ; les huit autres, des
-        créatures du folklore japonais. Les ressources de chaque dojo suivent son thème, donc{' '}
-        <code className="text-[15px] text-accent">kubectl get pods</code> se lit comme une histoire.
+        Trois dojos portent le nom des Shishin, les gardiens célestes ; les dix-sept autres, des
+        figures des mythes et légendes du Japon. Les ressources de chaque dojo suivent son thème,
+        donc <code className="text-[15px] text-accent">kubectl get pods</code> se lit comme une
+        histoire.
       </>
     ),
     items: {
@@ -93,11 +94,23 @@ export const fr: Dictionary = {
       Ryujin: 'Mer',
       Oni: 'Fortifications',
       Amaterasu: 'Lumière',
+      Tsukuyomi: 'Pénombre lunaire',
+      Fujin: 'Vents de tempête',
+      Raijin: 'Tonnerre & éclairs',
+      Susanoo: 'Mer & marées',
+      Benzaiten: 'Harmonie & flux',
+      Hachiman: 'Stratégie & bataille',
+      Izanagi: 'Création & ordre',
+      Bishamonten: 'Veille & défense',
+      Musashi: 'Maîtrise & duels',
     },
     themeHeader: 'Thème',
+    creditHeader: 'Crédit',
+    shuffle: 'Mélanger',
     contribute: 'Contribuer',
-    dojo12Title: 'Dojo 12 ?',
-    dojo12Text: "La matrice de couverture liste ce qu'il reste à travailler. Les PR sont ouvertes.",
+    dojoNextTitle: 'Dojo 21 ?',
+    dojoNextText:
+      "La matrice de couverture liste ce qu'il reste à travailler. Les PR sont ouvertes.",
   },
   features: {
     badge: 'Terminal embarqué',
@@ -123,11 +136,15 @@ export const fr: Dictionary = {
   contributors: {
     eyebrow: 'Contributeurs',
     title: "Les contributeurs à l'honneur.",
-    lede: 'Des humains, pas des bots : les comptes automatisés (dependabot, pre-commit.ci) ne figurent pas ici. Cinq dojos sur onze viennent de travaux partagés par la communauté et adaptés au simulateur.',
+    lede: 'Des humains, pas des bots : les comptes automatisés (dependabot, pre-commit.ci) ne figurent pas ici. Quatorze dojos sur vingt viennent de la communauté — cinq adaptés de travaux partagés, neuf contribués en contenu original.',
     items: [
       {
         role: 'Mainteneur',
         text: "Création du simulateur, de la CLI, de l'interface web et du scoring automatique. 300 commits.",
+      },
+      {
+        role: '9 dojos originaux',
+        text: 'Neuf dojos originaux, de Tsukuyomi à Musashi — 180 questions vers le haut du tableau.',
       },
       {
         role: '4 dojos adaptés',
