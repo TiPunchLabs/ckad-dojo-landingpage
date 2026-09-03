@@ -10,6 +10,7 @@ const CONTRIBUTORS = [
   { href: 'https://github.com/Sai7Teja', handle: '@Sai7Teja' },
   { href: 'https://github.com/dgkanatsios', handle: '@dgkanatsios' },
   { href: 'https://github.com/aravind4799', handle: '@aravind4799' },
+  { href: 'https://github.com/johnwasherecoding', handle: '@johnwasherecoding' },
 ];
 
 export function Contributors() {
@@ -25,7 +26,7 @@ export function Contributors() {
           lede={t.contributors.lede}
           ledeMax="max-w-[66ch]"
         />
-        <div className="grid boxed bg-paper sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid boxed bg-paper sm:grid-cols-2 lg:grid-cols-3">
           {CONTRIBUTORS.map((contributor, i) => {
             const text = t.contributors.items[i];
             if (!text) return null;
@@ -33,7 +34,7 @@ export function Contributors() {
               <Reveal key={contributor.handle} delay={staggerDelay(i)} className="h-full">
                 <a
                   href={contributor.href}
-                  className="grid h-full content-start gap-2.5 border-b border-line p-6 text-ink transition-colors hover:bg-ground sm:border-r lg:border-b-0"
+                  className={`grid h-full content-start gap-2.5 border-b border-line p-6 text-ink transition-colors hover:bg-ground sm:border-r ${i >= 3 ? 'lg:border-b-0' : ''}`}
                 >
                   <span className="font-mono text-sm">{contributor.handle}</span>
                   <span className="mono-label text-[11px] text-accent">{text.role}</span>

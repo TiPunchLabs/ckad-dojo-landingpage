@@ -154,6 +154,10 @@ export const fr: Dictionary = {
         role: '1 dojo adapté',
         text: 'CKAD-Practice-Questions, source du dojo Kappa des Rivières — 17 questions, 91 points.',
       },
+      {
+        role: 'Contributeur docs',
+        text: 'Garde le README à jour : nombre de dojos, listes de questions et citations synchronisés avec le contenu réel.',
+      },
     ],
     yourNameTitle: 'Votre nom ici',
     yourNameText:

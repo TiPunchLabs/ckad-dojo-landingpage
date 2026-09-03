@@ -155,6 +155,10 @@ export const en = {
         role: '1 dojo adapted',
         text: 'CKAD-Practice-Questions, source of the Kappa of the Rivers dojo — 17 questions, 91 points.',
       },
+      {
+        role: 'Docs contributor',
+        text: 'Keeps the README honest: dojo counts, question lists and quotes synced with the actual content.',
+      },
     ],
     yourNameTitle: 'Your name here',
     yourNameText: 'A dojo, a question, a scoring fix: everything counts. CC BY-NC-SA 4.0 license.',
